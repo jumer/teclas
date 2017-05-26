@@ -1,0 +1,109 @@
+<HTML>
+
+ <HEAD>
+  <TITLE>Mecanografía - Letras</TITLE>
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <meta name="DC.Language" scheme="RFC1766" content="español">
+  <link rel="stylesheet" href="estilos/apice.css" type="text/css">
+ </HEAD>
+
+ <BODY bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+ <script language="JavaScript" SRC="js/capas.js"></script>
+ <script language="JavaScript" SRC="js/mecanografia.js"></script>
+ <script language="JavaScript" SRC="js/letras.js"></script>
+  
+  <table border="0" cellpadding="10" cellspacing="0" width="100%">
+   <tr> 
+    <td align="left" valign="middle" width="75%">
+     <img src="imagenes/apice.gif" height="85"><br>
+    </td>
+    <td align="right" valign="middle" width="25%" colspan="2">
+     <img src="imagenes/raton.gif" height="52" width="131"><br>
+    </td>
+   </tr>
+   <tr> 
+    <td rowspan="2" align="center" valign="middle" class="texto">
+     <form name="fletra"><input type="text" name="letra" class="textogigante" value="" size="1" maxlength="1" onkeypress="pulsatecla(event)" readonly> <img name="imgnota" src="imagenes/blanco.gif" border="0" width="32" height="32" align="top"></form><br>
+     <div id="empiezaaqui"><a href="#" onclick="empieza();">Selecciona el nivel, las rondas y haz click aqu&iacute; para comenzar</a></div>
+    </td>
+    <td align="center" valign="middle"> 
+     <table border="1" cellpadding="5" cellspacing="0">
+      <tr> 
+       <td colspan="2" align="left" valign="middle" class="texto">
+        Nivel:
+       </td>
+      </tr>
+      <tr> 
+       <td align="center" valign="middle"> 
+        <img src="imagenes/nivel.gif" width="15" height="90" border="0"> 
+       </td>
+       <td align="left" valign="middle" class="texto">
+        <a href="#" onclick="cambianivel('dificil')">Dificil</a>&nbsp;<font class="minitexto">(5'')</font><br>
+        <br>
+        <a href="#" onclick="cambianivel('intermedio')">Intermedio</a>&nbsp;<font class="minitexto">(10'')</font><br>
+        <br>
+        <a href="#" onclick="cambianivel('facil')">Facil</a>&nbsp;<font class="minitexto">(20'')</font><br>
+       </td>
+      </tr>
+     </table>
+    </td>
+    <td align="center" valign="middle">
+	 <table border="1" cellpadding="5" cellspacing="0">
+      <tr> 
+       <td align="center" valign="middle" class="texto" colspan="2">
+        <div id="ronda"></div>
+        <script language="JavaScript">escriberonda(rondas)</script>
+       </td>
+      </tr>
+      <tr> 
+       <td rowspan="2" align="center" valign="middle">
+        <img src="imagenes/cronometro.gif" width="21" height="23" border="0" align="absmiddle"> 
+       </td>
+       <td align="center" valign="middle" class="texto">
+        Tiempo<br>
+       </td>
+      </tr>
+      <tr> 
+       <td align="center" valign="middle" class="texto">
+        <div id="tiempo"></div>
+        <script language="JavaScript">escribetiempo(tiempodefecto)</script>
+       </td>
+      </tr>
+     </table>
+	</td>
+   </tr>
+   <tr> 
+    <td align="center" valign="middle" colspan="2"> 
+     <table border="1" cellpadding="5" cellspacing="0">
+      <tr> 
+       <td align="center" valign="middle" class="texto">
+        <img src="imagenes/aciertos.gif" width="32" height="32" border="0" align="absmiddle"> Aciertos<br>
+       </td>
+       <td align="center" valign="middle" class="texto">
+        <img src="imagenes/fallos.gif" width="32" height="32" border="0" align="absmiddle"> Fallos<br>
+       </td>
+      </tr>
+      <tr> 
+       <td align="center" valign="middle" class="texto">
+        <div id="acierto"></div>
+        <script language="JavaScript">escribeaciertos(aciertosdefecto)</script>
+       </td>
+       <td align="center" valign="middle" class="texto">
+        <div id="fallo"></div>
+        <script language="JavaScript">escribefallos(fallosdefecto)</script>
+       </td>
+      </tr>
+      <tr>
+       <td align="center" valign="middle" class="texto" colspan="2" nowrap>
+        <div id="nota"></div>
+        <script language="JavaScript">ponnota()</script>
+       </td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+  </table>
+  <center><font class="texto"><a href="javascript:alert('Letras v.3\n\noo0-|O O|-0oo  JUMER (c) Félix Ruiz\n\njumerg@gmail.com');">Acerca de ...</a></font></center>
+ </BODY>
+</HTML>
